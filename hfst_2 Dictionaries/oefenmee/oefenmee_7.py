@@ -5,3 +5,12 @@ gasten = { # Sleutel is naam, waarde is job.
     "Joris":   "regisseur",
     "Korneel": "scenarist"
 }
+
+
+while True:
+    naam = input("wat is je naam")
+    if naam in gasten:
+        for naam,job in gasten.items():
+            print(f"welkom {job} {naam}")
+
+        

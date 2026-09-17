@@ -4,3 +4,19 @@ persoonsinfo = { # info over een persoon
     "leeftijd": 32,
     "massa": 79
 }
+
+#niveau 1
+print(f"{persoonsinfo['naam']} is {persoonsinfo['leeftijd']} jaar oud en weegt {persoonsinfo['massa']} kg ")
+
+#niveau 2
+print( len( persoonsinfo ) ) # hoeveel keys er in staan
+
+# #niveau 3
+# oogkleur = persoonsinfo["oogkleur"] 
+# print(f"Deze persoon heeft {oogkleur} ogen.")
+# # er is geen waarde van de key bij gezet
+
+#niveau 4
+naam = "Jan"
+print(persoonsinfo[naam])
+#jan is een waarde,geen key
