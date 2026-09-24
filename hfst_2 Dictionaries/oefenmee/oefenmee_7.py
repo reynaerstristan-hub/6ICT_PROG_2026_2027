@@ -8,9 +8,13 @@ gasten = { # Sleutel is naam, waarde is job.
 
 
 while True:
-    naam = input("wat is je naam")
-    if naam in gasten:
-        for naam,job in gasten.items():
-            print(f"welkom {job} {naam}")
+    naam = input("wat is je naam: ")
+    if naam == "stop":
+        break
+    
+    elif naam in gasten:
+        print(f"hallo {gasten.get(naam)} {naam}")
+        gasten.pop(naam)
 
-        
+    elif naam not in gasten:
+        print("naam niet op lijst")
