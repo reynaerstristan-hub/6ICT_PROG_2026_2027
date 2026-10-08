@@ -15,3 +15,9 @@ landen_feiten = {
         'taal': 'Duits',
     }
 }
+
+print("hoofdstad van landen")
+for landen,land in landen_feiten.items():
+    for stad,hoofdstad in land.items():
+        if "hoofdstad" in stad:
+            print(landen + ":" + hoofdstad)
