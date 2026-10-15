@@ -11,6 +11,6 @@ print(laptop_info[0],laptop_info[1][1],laptop_info[2][4][1])
 laptop_info[2][0] = laptop_info[2][0] + 2
 
 #niveau 3
-laptop_info.append(1)
-laptop_info[3].append("campus")
+laptop_info[2].append([1])
+laptop_info[2][5].append("campus")
 print(laptop_info)
